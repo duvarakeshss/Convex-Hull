@@ -1,6 +1,5 @@
-streamlit
-matplotlib
-io
+streamlit==1.44.0
+matplotlib==3.10.1
 base64
 json
 math

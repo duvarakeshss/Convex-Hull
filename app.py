@@ -2,14 +2,14 @@ import streamlit as st
 import json
 import matplotlib.pyplot as plt
 from main import ConvexHull
-import io
+from io import BytesIO
 import base64
 
 def get_download_link(fig, filename="convex_hull.png", text="Download Plot"):
     """
     Generates a download link for the plot
     """
-    buf = io.BytesIO()
+    buf = BytesIO()
     fig.savefig(buf, format='png', bbox_inches='tight')
     buf.seek(0)
     b64 = base64.b64encode(buf.getvalue()).decode()
