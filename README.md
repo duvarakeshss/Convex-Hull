@@ -7,29 +7,22 @@ A convex hull is the smallest convex polygon that contains all points in a given
 
 ## Project Structure
 ```
-project/
+Convex-HULL/
 │
-├── main.py         # Core ConvexHull class implementation
-├── app.py          # Streamlit web interface
-├── data.json       # Sample input data
-└── requirements.txt # Project dependencies
-```
-
-## Requirements
-
-- Python 3.x
-- matplotlib
-
-To install the required package:
-```
-pip install matplotlib
+├── main.py                 # Core ConvexHull class implementation
+├── app.py                  # Streamlit web interface
+|├── data/                  #input data
+||    └── data.json
+|├── outputs/               #Output data
+||    └── convex_hull.png
+└── requirements.txt         # Project dependencies
 ```
 
 ## Setup and Installation
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/duvarakeshss/Convex-Hull
 cd convex-hull
 ```
 
@@ -138,9 +131,3 @@ convex_hull.plot(save_path="convex_hull.png")
 - `save_points_to_file(file_path)`: Save points to JSON
 - `add_points(new_points)`: Add points to existing set
 - `set_points(points)`: Replace all points
-
-## Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
